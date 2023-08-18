@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "59c1a7d7-55d5-4036-9738-17a6416aad07",
+		"name": "STGenetics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11425515",
+		"_collection_link": "https://www.postman.com/bold-equinox-413384/workspace/wsthales/collection/11425515-59c1a7d7-55d5-4036-9738-17a6416aad07?action=share&creator=11425515&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Animal",
+			"item": [
+				{
+					"name": "Put",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXJAbWFpbC5jb20iLCJleHAiOjE3MjM5Mzk2MDF9.6jDMxp7hycxQlDMlIVVv9EAiOzotRm5ohmks2XrPhls",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Ricardo3\",\r\n  \"breed\": \"string2\",\r\n  \"birthDate\": \"2023-08-18\",\r\n  \"sex\": \"M\",\r\n  \"price\": 10,\r\n  \"status\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7181/api/animals/036f4e64-dfed-4756-83ce-a036b573be9b",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7181",
+							"path": [
+								"api",
+								"animals",
+								"036f4e64-dfed-4756-83ce-a036b573be9b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXJAbWFpbC5jb20iLCJleHAiOjE3MjM5Mzk2MDF9.6jDMxp7hycxQlDMlIVVv9EAiOzotRm5ohmks2XrPhls",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Ricardo1\",\r\n  \"breed\": \"string\",\r\n  \"birthDate\": \"2023-08-17T13:26:02.987Z\",\r\n  \"sex\": \"F\",\r\n  \"price\": 100,\r\n  \"status\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7181/api/animals",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7181",
+							"path": [
+								"api",
+								"animals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXJAbWFpbC5jb20iLCJleHAiOjE3MjM5Mzk2MDF9.6jDMxp7hycxQlDMlIVVv9EAiOzotRm5ohmks2XrPhls",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7181/api/animals/036F4E64-DFED-4756-83CE-A036B573BE9B",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7181",
+							"path": [
+								"api",
+								"animals",
+								"036F4E64-DFED-4756-83CE-A036B573BE9B"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXJAbWFpbC5jb20iLCJleHAiOjE3MjM5Mzk2MDF9.6jDMxp7hycxQlDMlIVVv9EAiOzotRm5ohmks2XrPhls",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7181/api/animals?animalId=EB111D6E-8734-4B7C-8162-0047634E584C&Name=Radish34&Sex=M&Status=0",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7181",
+							"path": [
+								"api",
+								"animals"
+							],
+							"query": [
+								{
+									"key": "animalId",
+									"value": "EB111D6E-8734-4B7C-8162-0047634E584C"
+								},
+								{
+									"key": "Name",
+									"value": "Radish34"
+								},
+								{
+									"key": "Sex",
+									"value": "M"
+								},
+								{
+									"key": "Status",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXJAbWFpbC5jb20iLCJleHAiOjE3MjM5Mzk2MDF9.6jDMxp7hycxQlDMlIVVv9EAiOzotRm5ohmks2XrPhls",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"date\": \"2023-08-17\",\r\n  \"customerId\": \"string\",\r\n  \"orderDetails\": [\r\n      {\"animalId\" : \"0D32941B-04E5-46D8-BECD-0087BCA44A36\", \r\n      \"quantity\": 1000\r\n      }, \r\n      {\"animalId\" : \"A1A9DE8D-D6D5-41BE-B4B7-00D94198A14E\", \r\n      \"quantity\": 200\r\n      }\r\n  ]\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7181/api/orders",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7181",
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "PostLogin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"user@mail.com\",\r\n  \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7181/api/accounts/login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7181",
+							"path": [
+								"api",
+								"accounts",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
